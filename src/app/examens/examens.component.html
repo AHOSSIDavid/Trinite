@@ -1,0 +1,25 @@
+<div *ngIf="ceps" class="container mob-table">
+  <div class="headers">
+    <h2 class="table-title">Nos résultats aux examens</h2>
+  </div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Année</th>
+        <th>Examen</th>
+        <th>Candidats présentés</th>
+        <th>Admis</th>
+        <th>Taux</th>
+      </tr>
+    </thead>
+    <tbody class="text-center">
+      <tr *ngFor="let cep of ceps">
+   <td> {{cep['Anne']}}</td>
+   <td> {{cep['cep']}}</td>
+   <td> {{cep['candidats']}}</td>
+   <td> {{cep['admis']}}</td>
+   <td> {{cep['taux']}}</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>

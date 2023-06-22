@@ -1,0 +1,24 @@
+<div *ngIf="eleves" class="container mob-table">
+<div class="headers">
+  <h2 class="table-title">Nos meilleurs élèves</h2>
+</div>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Nom</th>
+      <th>Prénom(s)</th>
+      <th>Moyenne</th>
+      <th>Mention</th>
+
+    </tr>
+  </thead>
+  <tbody class="text-center">
+    <tr *ngFor="let eleve of eleves">
+ <td> {{eleve['Nom']}}</td>
+ <td> {{eleve['Prenom']}}</td>
+ <td> {{eleve['Moyennee']}}</td>
+ <td> {{eleve['Mention']}}</td>
+    </tr>
+  </tbody>
+</table>
+</div>

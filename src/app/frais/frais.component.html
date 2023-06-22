@@ -1,0 +1,29 @@
+<div *ngIf="frais" class="container mob-table">
+  <div class="headers">
+    <h2 class="table-title">Nos frais scolaires 2023-2024</h2>
+  </div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Classe</th>
+        <th>Inscription</th>
+        <th>Réinscription</th>
+        <th>Scolarité</th>
+        <th>Frais divers</th>
+        <th>TD</th>
+        <th>Total à payer</th>
+      </tr>
+    </thead>
+    <tbody class="text-center">
+      <tr *ngFor="let frai of frais">
+   <td> {{frai['classe']}}</td>
+   <td> {{frai['reinscription']}}</td>
+   <td> {{frai['inscription']}}</td>
+   <td> {{frai['scolarité']}}</td>
+   <td> {{frai['fd']}}</td>
+   <td> {{frai['td']}}</td>
+   <td> {{frai['total']}}</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>

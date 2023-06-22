@@ -1,0 +1,28 @@
+.mob-table{
+  width: 800px;
+  padding: 15px 15px;
+  background-color: white;
+  border-radius: 3px;
+}
+
+.headers{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #435d7d;
+  color: white;
+}
+
+.add{
+  background-color: #5cbB5c;
+  color: white;
+}
+
+.btn-primary{
+    background-color: #337ab7;
+}
+
+th{
+  text-align: center;
+}
